@@ -11,6 +11,12 @@ p
   br
   = @taco.tortilla
 
+- if @taco.ingredients.present?
+  strong Ingredients:
+  ul.unstyled
+  - @taco.ingredients.each do |ingredient|
+    li= ingredient.name
+
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), tacos_path, :class => 'btn'
   '
