@@ -1,4 +1,4 @@
 TacoTracker::Application.routes.draw do
   resources :tacos
-  root 'tacos#index'
+  root to: 'tacos#index'
 end
