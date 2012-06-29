@@ -4,6 +4,14 @@
     .controls
       = f.text_field :name, :class => 'text_field'
   = f.input :tortilla, as: :radio_buttons, collection: %w{Flour Corn}
+  #ingredients
+    fieldset
+      legend Ingredients
+      br
+      = f.simple_fields_for :ingredients do |ingredient|
+        = render 'ingredient_fields', f: ingredient
+      .links
+        = link_to_add_association 'Add Ingredient', f, :ingredients
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     '

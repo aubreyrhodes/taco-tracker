@@ -43,6 +43,7 @@ GEM
       json
     childprocess (0.3.3)
       ffi (~> 1.0.6)
+    cocoon (1.0.22)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -192,6 +193,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   capybara-webkit
+  cocoon
   coffee-rails (~> 3.2.1)
   database_cleaner
   factory_girl

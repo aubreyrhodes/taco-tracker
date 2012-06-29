@@ -10,6 +10,7 @@ end
 gem 'jquery-rails'
 gem 'slim-rails'
 gem 'simple_form'
+gem 'cocoon'
 group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl'
