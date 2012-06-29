@@ -10,7 +10,7 @@ table class="table table-striped"
   tbody
     - @tacos.each do |taco|
       tr
-        td= taco.name
+        td= link_to taco.name, taco_path(taco)
         td= taco.tortilla
         td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_taco_path(taco), :class => 'btn'
